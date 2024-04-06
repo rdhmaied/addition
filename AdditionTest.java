@@ -12,4 +12,9 @@ public class AdditionTest {
     public void testPositiveIntegers() {
         assertEquals(8, Addition.add(5, 3));
     }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testNonIntegerInputs() {
+        Addition.add(5, '3');
+    }
 }
