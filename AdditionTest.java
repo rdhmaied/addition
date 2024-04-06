@@ -7,4 +7,9 @@ public class AdditionTest {
     public void testNegativeInteger() {
         Addition.add(5, -3);
     }
+    
+    @Test
+    public void testPositiveIntegers() {
+        assertEquals(8, Addition.add(5, 3));
+    }
 }
